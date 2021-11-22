@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "minimum_chrome_version": "10.0",
+    "name": "ext_zlo",
+    "description": "ext_zlo",
+    "version": "1.0",
+    "icons": {
+        "128": "icon96.png",
+        "32": "icon32.png",
+        "16": "icon16.png"
+    },
+    "browser_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "activeTab",
+        "notifications",
+        "http://*/*",
+        "https://*/*",
+        "storage"
+    ],
+    "background": {
+        "type": "module",
+        "scripts": ["background.js", "hot-reload.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "all_frames": true,
+            "matches": ["<all_urls>"],
+            "js": ["content_hook.js"]
+        },
+        {
+            "run_at": "document_start",
+            "matches": ["<all_urls>"],
+            "js": ["content_api.js"]
+        }
+    ]
+}

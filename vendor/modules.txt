@@ -1,0 +1,35 @@
+# github.com/google/uuid v1.3.0
+## explicit
+github.com/google/uuid
+# github.com/gorilla/mux v1.8.0
+## explicit
+github.com/gorilla/mux
+# github.com/gorilla/websocket v1.4.2
+## explicit
+github.com/gorilla/websocket
+# github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88
+## explicit
+# github.com/k0kubun/pp v3.0.1+incompatible
+## explicit
+github.com/k0kubun/pp
+# github.com/lithammer/shortuuid v3.0.0+incompatible
+## explicit
+github.com/lithammer/shortuuid
+# github.com/mattn/go-colorable v0.1.11
+## explicit
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.14
+github.com/mattn/go-isatty
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/sirupsen/logrus v1.8.1
+## explicit
+github.com/sirupsen/logrus
+# golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
+## explicit
+golang.org/x/sync/errgroup
+# golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
